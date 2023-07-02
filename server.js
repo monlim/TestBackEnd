@@ -5,8 +5,8 @@ const port = 8383;
 app.use(express.static("public"));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.status(200).json({ "preset text" });
+app.get("/info", (req, res) => {
+  res.status(200).json({ info: "preset text" });
 });
 
 app.post("/", (req, res) => {

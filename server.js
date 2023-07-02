@@ -5,11 +5,8 @@ const port = 8383;
 app.use(express.static("public"));
 app.use(express.json());
 
-app.get("/info/:dynamic", (req, res) => {
-  const { dynamic } = req.params;
-  const { key } = req.query;
-  console.log(dynamic, key);
-  res.status(200).json({ info: "preset text" });
+app.get("/", (req, res) => {
+  res.status(200).json({ "preset text" });
 });
 
 app.post("/", (req, res) => {

@@ -9,7 +9,7 @@ postBtn.addEventListener("click", postInfo);
 
 async function getInfo(e) {
   e.preventDefault();
-  const res = await fetch(baseURL, {
+  const res = await fetch(baseURL + "info/", {
     method: "GET",
   });
   console.log(res);

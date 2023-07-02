@@ -2,7 +2,7 @@ const getBtn = document.getElementById("get");
 const postBtn = document.getElementById("post");
 const input = document.getElementById("input");
 
-const baseURL = "http://localhost:8383/";
+const baseURL = "https://testbackend-jhqa.onrender.com/";
 
 getBtn.addEventListener("click", getInfo);
 postBtn.addEventListener("click", postInfo);
